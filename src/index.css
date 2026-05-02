@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Cormorant Garamond", serif;
+
+  --color-natural-bg: #F7F5F2;
+  --color-natural-text: #4A443E;
+  --color-natural-muted: #7C746B;
+  --color-natural-accent: #5A5A40;
+  --color-natural-border: #E5E0D8;
+  --color-natural-stone: #D6D0C7;
+  --color-natural-placeholder: #B0A9A1;
+}
+
+@layer base {
+  .prose {
+    --tw-prose-body: var(--color-natural-text);
+    --tw-prose-headings: var(--color-natural-accent);
+    --tw-prose-links: var(--color-natural-accent);
+    --tw-prose-bold: var(--color-natural-text);
+    --tw-prose-counters: var(--color-natural-accent);
+    --tw-prose-bullets: var(--color-natural-accent);
+    --tw-prose-hr: var(--color-natural-border);
+    --tw-prose-quotes: var(--color-natural-accent);
+    --tw-prose-quote-borders: var(--color-natural-stone);
+    --tw-prose-captions: var(--color-natural-muted);
+    --tw-prose-code: var(--color-natural-text);
+    --tw-prose-pre-code: var(--color-natural-bg);
+    --tw-prose-pre-bg: var(--color-natural-text);
+    --tw-prose-th-borders: var(--color-natural-border);
+    --tw-prose-td-borders: var(--color-natural-border);
+  }
+
+  body {
+    background-color: var(--color-natural-bg);
+    color: var(--color-natural-text);
+  }
+}
+
